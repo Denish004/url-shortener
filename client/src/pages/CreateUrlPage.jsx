@@ -96,7 +96,7 @@ const CreateUrlPage = () => {
             <h3 className="font-semibold mb-2">QR Code:</h3>
             <div className="bg-white p-4 inline-block rounded-lg">
               <QRCodeCanvas
-                value={`https://url-shortener-1q0k.onrender.com/${currentUrl.shortCode}`}
+                value={`http://localhost:5000/${currentUrl.shortCode}`}
                 size={160}
                 fgColor="#000"
                 bgColor="#fff"
@@ -106,7 +106,7 @@ const CreateUrlPage = () => {
             </div>
             <div className="mt-2">
               <a
-                href={`https://url-shortener-1q0k.onrender.com/${currentUrl.shortCode}`}
+                href={`http://localhost:5000/${currentUrl.shortCode}`}
                 className="text-blue-500 hover:text-blue-700"
                 download="qr-code.png"
               >

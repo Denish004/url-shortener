@@ -1,9 +1,6 @@
 import axios from "axios";
 
-// Use environment variable with fallback
-const API_URL =
-  process.env.REACT_APP_API_URL ||
-  "https://url-shortener-1q0k.onrender.com/api";
+const API_URL = "https://url-shortener-1q0k.onrender.com/api";
 
 const api = axios.create({
   baseURL: API_URL,

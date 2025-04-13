@@ -14,8 +14,10 @@ const generateToken = (id) => {
 // @access  Public
 const loginUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
+  console.log("Login attempt:", email); // Add this
 
   const user = await User.findOne({ email });
+  console.log("User found:", user ? "Yes" : "No"); // Add this
 
   if (user && (await user.matchPassword(password))) {
     res.json({
@@ -24,6 +26,7 @@ const loginUser = asyncHandler(async (req, res) => {
       token: generateToken(user._id),
     });
   } else {
+    console.log("Password match failed"); // Add this
     res.status(401);
     throw new Error("Invalid email or password");
   }
