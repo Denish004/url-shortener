@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api";
+// Replace localhost URL with your deployed backend URL
+const API_URL = "https://url-shortener-1q0k.onrender.com/api";
 
 const api = axios.create({
   baseURL: API_URL,
