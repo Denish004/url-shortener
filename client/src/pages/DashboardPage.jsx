@@ -114,7 +114,7 @@ const DashboardPage = () => {
                     </td>
                     <td className="py-2 px-4 border-b">
                       <a
-                        href={`http://localhost:5000/${url.shortCode}`}
+                        href={`https://url-shortener-1q0k.onrender.com/${url.shortCode}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-500 hover:text-blue-700"
