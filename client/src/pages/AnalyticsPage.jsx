@@ -94,7 +94,7 @@ const AnalyticsPage = () => {
     );
   }
 
-  const shortUrl = `http://localhost:5000/${currentUrl.shortCode}`;
+  const shortUrl = `https://url-shortener-1q0k.onrender.com/${currentUrl.shortCode}`;
 
   return (
     <div className="container mx-auto px-4 py-8">

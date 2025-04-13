@@ -75,12 +75,12 @@ const CreateUrlPage = () => {
             <p className="mb-1">
               <span className="font-semibold">Short URL:</span>{" "}
               <a
-                href={`http://localhost:5000/${currentUrl.shortCode}`}
+                href={`https://url-shortener-1q0k.onrender.com/${currentUrl.shortCode}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:text-blue-700"
               >
-                http://localhost:5000/{currentUrl.shortCode}
+                https://url-shortener-1q0k.onrender.com/{currentUrl.shortCode}
               </a>
             </p>
             {currentUrl.expiresAt && (
@@ -96,7 +96,7 @@ const CreateUrlPage = () => {
             <h3 className="font-semibold mb-2">QR Code:</h3>
             <div className="bg-white p-4 inline-block rounded-lg">
               <QRCodeCanvas
-                value={`http://localhost:5000/${currentUrl.shortCode}`}
+                value={`https://url-shortener-1q0k.onrender.com/${currentUrl.shortCode}`}
                 size={160}
                 fgColor="#000"
                 bgColor="#fff"
@@ -106,7 +106,7 @@ const CreateUrlPage = () => {
             </div>
             <div className="mt-2">
               <a
-                href={`http://localhost:5000/${currentUrl.shortCode}`}
+                href={`https://url-shortener-1q0k.onrender.com/${currentUrl.shortCode}`}
                 className="text-blue-500 hover:text-blue-700"
                 download="qr-code.png"
               >
